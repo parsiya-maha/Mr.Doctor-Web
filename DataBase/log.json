@@ -1,0 +1,65 @@
+[
+    {
+        "log_id": 4,
+        "id": "83878c91171338902e0fe0fb97a8c47a0cc175b9c0f1b6a831c399e2697726614b43b0aee35624cd95b910189b3dc23103c7c0ace395d80182db07ae2c30f034865c0c0b4ab0e063e5caa3387c1a8741415290769594460e2e485922904f345d0cc175b9c0f1b6a831c399e269772661c81e728d9d4c2f636f067f89cc14862ccfcd208495d565ef66e7dff9f98764da83878c91171338902e0fe0fb97a8c47a0cc175b9c0f1b6a831c399e2697726614b43b0aee35624cd95b910189b3dc23103c7c0ace395d80182db07ae2c30f034865c0c0b4ab0e063e5caa3387c1a8741415290769594460e2e485922904f345d0cc175b9c0f1b6a831c399e269772661c81e728d9d4c2f636f067f89cc14862ccfcd208495d565ef66e7dff9f98764daeccbc87e4b5ce2fe28308fd9f2a7baf3c9f0f895fb98ab9159f51fd0297e236dc9f0f895fb98ab9159f51fd0297e236d",
+        "option": "BrainTumors",
+        "result": "notumor",
+        "time": 1.362,
+        "path": "D:/Parsia Works/python/Project/AI/BrainTumors/datasets/Testing/notumor/Te-no_0071.jpg",
+        "point": 0
+    },
+    {
+        "log_id": 5,
+        "id": "83878c91171338902e0fe0fb97a8c47a0cc175b9c0f1b6a831c399e2697726614b43b0aee35624cd95b910189b3dc23103c7c0ace395d80182db07ae2c30f034865c0c0b4ab0e063e5caa3387c1a8741415290769594460e2e485922904f345d0cc175b9c0f1b6a831c399e269772661c81e728d9d4c2f636f067f89cc14862ccfcd208495d565ef66e7dff9f98764da83878c91171338902e0fe0fb97a8c47a0cc175b9c0f1b6a831c399e2697726614b43b0aee35624cd95b910189b3dc23103c7c0ace395d80182db07ae2c30f034865c0c0b4ab0e063e5caa3387c1a8741415290769594460e2e485922904f345d0cc175b9c0f1b6a831c399e269772661c81e728d9d4c2f636f067f89cc14862ccfcd208495d565ef66e7dff9f98764daeccbc87e4b5ce2fe28308fd9f2a7baf3c9f0f895fb98ab9159f51fd0297e236dc9f0f895fb98ab9159f51fd0297e236d",
+        "option": "ToRecognizeAndPredict",
+        "result": "BrainTumor : notumor",
+        "time": 0.893,
+        "path": "D:/Parsia Works/python/Project/AI/BrainTumors/datasets/Testing/notumor/Te-no_0071.jpg",
+        "point": 0
+    },
+    {
+        "log_id": 6,
+        "id": "83878c91171338902e0fe0fb97a8c47a0cc175b9c0f1b6a831c399e2697726614b43b0aee35624cd95b910189b3dc23103c7c0ace395d80182db07ae2c30f034865c0c0b4ab0e063e5caa3387c1a8741415290769594460e2e485922904f345d0cc175b9c0f1b6a831c399e269772661c81e728d9d4c2f636f067f89cc14862ccfcd208495d565ef66e7dff9f98764da83878c91171338902e0fe0fb97a8c47a0cc175b9c0f1b6a831c399e2697726614b43b0aee35624cd95b910189b3dc23103c7c0ace395d80182db07ae2c30f034865c0c0b4ab0e063e5caa3387c1a8741415290769594460e2e485922904f345d0cc175b9c0f1b6a831c399e269772661c81e728d9d4c2f636f067f89cc14862ccfcd208495d565ef66e7dff9f98764daeccbc87e4b5ce2fe28308fd9f2a7baf3c9f0f895fb98ab9159f51fd0297e236dc9f0f895fb98ab9159f51fd0297e236d",
+        "option": "BrainTumors",
+        "result": "notumor",
+        "time": 0.994,
+        "path": "D:/Parsia Works/python/Project/AI/BrainTumors/datasets/Testing/notumor/Te-no_0015.jpg",
+        "point": 1
+    },
+    {
+        "log_id": 8,
+        "id": "7fc56270e7a70fa81a5935b72eacbe292db95e8e1a9267b7a1188556b2013b33865c0c0b4ab0e063e5caa3387c1a8741e4da3b7fbbce2345d7772b0674a318d5e4da3b7fbbce2345d7772b0674a318d5a87ff679a2f3e71d9181a67b7542122cc4ca4238a0b923820dcc509a6f75849bc81e728d9d4c2f636f067f89cc14862ceccbc87e4b5ce2fe28308fd9f2a7baf3a87ff679a2f3e71d9181a67b7542122c",
+        "option": "ToRecognizeAndPredict",
+        "result": "BrainTumor : notumor",
+        "time": 0.808,
+        "path": "D:/Parsia Works/python/Project/AI/BrainTumors/datasets/Testing/notumor/Te-no_0129.jpg",
+        "point": 1
+    },
+    {
+        "log_id": 9,
+        "id": "83878c91171338902e0fe0fb97a8c47a0cc175b9c0f1b6a831c399e2697726614b43b0aee35624cd95b910189b3dc23103c7c0ace395d80182db07ae2c30f034865c0c0b4ab0e063e5caa3387c1a8741415290769594460e2e485922904f345d0cc175b9c0f1b6a831c399e269772661c4ca4238a0b923820dcc509a6f75849bc81e728d9d4c2f636f067f89cc14862ceccbc87e4b5ce2fe28308fd9f2a7baf3a87ff679a2f3e71d9181a67b7542122c",
+        "option": "ToRecognizeAndPredict",
+        "result": "BrainTumor : notumor",
+        "time": 0.825,
+        "path": "D:/Parsia Works/python/Project/AI/BrainTumors/datasets/Testing/notumor/Te-no_0162.jpg",
+        "point": 0
+    },
+    {
+        "log_id": 10,
+        "id": "6f8f57715090da2632453988d9a1501b0cc175b9c0f1b6a831c399e2697726612510c39011c5be704182423e3a695e918277e0910d750195b448797616e091ad865c0c0b4ab0e063e5caa3387c1a8741c4ca4238a0b923820dcc509a6f75849beccbc87e4b5ce2fe28308fd9f2a7baf3c9f0f895fb98ab9159f51fd0297e236dc9f0f895fb98ab9159f51fd0297e236dc4ca4238a0b923820dcc509a6f75849bc81e728d9d4c2f636f067f89cc14862ceccbc87e4b5ce2fe28308fd9f2a7baf3a87ff679a2f3e71d9181a67b7542122ce4da3b7fbbce2345d7772b0674a318d51679091c5a880faf6fb5e6087eb1b2dc8f14e45fceea167a5a36dedd4bea2543c9f0f895fb98ab9159f51fd0297e236d45c48cce2e2d7fbdea1afc51c7c6ad26",
+        "option": "BrainTumors",
+        "result": "notumor",
+        "time": 0.758,
+        "path": "D:/Parsia Works/python/Project/AI/BrainTumors/datasets/Testing/notumor/Te-no_0314.jpg",
+        "point": 0
+    },
+    {
+        "log_id": 11,
+        "id": "6f8f57715090da2632453988d9a1501b0cc175b9c0f1b6a831c399e2697726612510c39011c5be704182423e3a695e918277e0910d750195b448797616e091ad865c0c0b4ab0e063e5caa3387c1a8741c4ca4238a0b923820dcc509a6f75849beccbc87e4b5ce2fe28308fd9f2a7baf3c9f0f895fb98ab9159f51fd0297e236dc9f0f895fb98ab9159f51fd0297e236dc4ca4238a0b923820dcc509a6f75849bc81e728d9d4c2f636f067f89cc14862ceccbc87e4b5ce2fe28308fd9f2a7baf3a87ff679a2f3e71d9181a67b7542122ce4da3b7fbbce2345d7772b0674a318d51679091c5a880faf6fb5e6087eb1b2dc8f14e45fceea167a5a36dedd4bea2543c9f0f895fb98ab9159f51fd0297e236d45c48cce2e2d7fbdea1afc51c7c6ad26",
+        "option": "ToRecognizeAndPredict",
+        "result": "BrainTumor : notumor",
+        "time": 0.758,
+        "path": "D:/Parsia Works/python/Project/AI/BrainTumors/datasets/Testing/notumor/Te-no_0314.jpg",
+        "point": 1
+    }
+]
