@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --bg-color: #1f242d;
+    --second-bg-color: #323946;
+    --text-color: #fff;
+    --main-color: #0ef;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    background: var(--bg-color) ;
+    color: var(--text-color);
+}
+
+section {
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    background: var(--bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.header.sticky{
+    border-bottom: .1rem solid rgba(0, 0, 0, .2);
+    top: 0;
+}
+
+.logo{
+    font-size: 2.5rem;
+    color: var(--text-color);
+    font-weight: 600;
+    cursor: default;
+}
+
+.navbar a{
+    font-size: 1.7em;
+    color: var(--text-color);
+    margin-left: 4rem;
+    transition: .3s;
+}
+
+.navbar a:hover,
+.navbar a.active
+{
+    color: var(--main-color);
+}
+
+#menu-icon{
+    font-size: 3.6em;
+    color: var(--text-color); 
+    display: none;
+}
+
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-img img{
+    width: 35vw;
+    animation: floatImage 4s ease-in-out infinite;
+}
+
+@keyframes floatImage{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-2.4rem);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+.container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--bg-color);
+  }
+  
+  .head{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 3rem;
+    color: var(--main-color);
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+  }
+  
+  .form-input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 1rem 0;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 5px;
+  }
+  
+  .form-input label {
+    width: 20%;
+    text-align: right;
+    padding-right: 1rem;
+  }
+  
+  .form-input input,
+  .form-input select {
+    width: 80%;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 5px;
+  }
+  
+  .form-input input[type="file"] {
+    padding: 0;
+    padding-right: 1rem;
+  }
+  
+  .form-input select {
+    padding-right: 1rem;
+  }
+  
+  .form-button {
+    /* width: 100%;
+    margin-top: 2rem;
+    background-color: #4CAF50;
+    border-radius: 4px; */
+    text-align: center;
+  }
+  
+  /* .form-button button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 859px;
+    margin-left: -200%;
+  } */
+  
+  .form-button button:hover {
+    background-color: #3e8e41;
+  }
+  #first{
+    /* width: 400px;
+    position: relative;
+    margin-top: 300px;
+    margin-left: 300px; */
+    transition:  1.5s ease; /* Add transition property */
+}
+#second{
+    display: none;
+    /* width: 100px;
+    margin-left: 10px; */
+    transition: width 1.5s ease; /* Add transition property */
+}
+
+ 
+table {
+  border-collapse: collapse;
+  width: 50%;
+  margin-left: 0%;
+  border-radius: 2px;
+}
+
+th, td {
+  border: 3px solid black;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: var(--bg-color);
+}
+
+tr:nth-child(even) {
+  background-color: var(--bg-color);
+}
+
+.cancer_logo{
+  width: 179px;
+  height: 342px;
+}
