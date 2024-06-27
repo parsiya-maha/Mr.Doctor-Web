@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="{{ url_for('static', path='/css/style.css') }}" rel="stylesheet">
+    <link rel="icon" href="static/img/icon-2-big.png" sizes="25x25" type="image/png">  
+    <title>Mr.Doctor</title>
+    <style>
+      .portfolio-box img{
+          width: 70%;
+          transition: .5s ease;
+          height: 257px;
+          margin-left: 55px;
+          padding: 82px;
+      }
+      .heading{
+        padding-top: 40px;
+      }
+      .portfolio-box img{
+        width: 353px;
+        transition: .5s ease;
+        height: 257px;
+        margin-left: 0px;
+        padding: 0px;
+    }
+    @media (max-width: 300){
+      *{
+        color: black  ;
+      }
+    }
+    
+.services h2{
+  margin-bottom: 5rem;
+}
+
+.services-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.services-container .services-box{
+  flex: 1 1 30rem;
+  background: var(--second-bg-color);
+  padding: 3rem 2rem 4rem;
+  border-radius: 2rem;
+  text-align: center;
+  border: .2rem solid var(--bg-color);
+  transition: .5s ease;
+}
+.services img{
+  width: 70px;
+  height: 70px;
+  color: #0ef;
+}
+.services-box i{
+  font-size: 7rem;
+  color: #32aff7;
+}
+    </style>
+  </head>
+  <body>
+
+    <!-- header design -->
+
+     <header class="header">
+      <a href="#" class="logo">Mr.Doctor</a>
+
+      <i class='bx bx-menu' id="menu-icon"></i>
+
+      <nav class="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Articles</a>
+        <a href="#contact">Contact</a>
+        <a href="templates/test-start.html">Get Start</a>
+        <!--<a href="indexPersian.html">فارسی</a>-->
+      </nav>
+    </header>
+  
+
+    <!-- home section design -->
+
+    <section class="home" id="home">
+      <div class="home-content">
+        <h3>Hi,  Predict by</h3>
+        <h1>Mr.Doctor</h1>
+        <h3>And We're working on <span class="multiple-text"></span></h3>
+        <p>You can have high-accuracy predictions of cancer and tumors, and it can 
+          also detect the type of 
+          disease in the photo in addition to determining the extent of the disease.
+        </p>
+        <div class="social-media">
+          <a href="#"><i class='bx bxl-facebook'></i></a>
+          <a href="https://mail.google.com/"><i class='bx bxl-gmail'></i></a>
+          <a href="https://github.com/parsiya-maha/SMA/tree/master"><i class='bx bxl-github'></i></a>
+          <a href="#"><i class='bx bxl-linkedin'></i></a>
+        </div>
+        <a href="templates/test-start.html" class="btn">Get Started</a>
+      </div>
+
+      <div class="home-img">
+        <img src="static/img/home.png" alt="">
+      </div>
+    </section>
+
+    <!-- about section design -->
+
+    <section class="about" id="about">
+      <div class="about-img">
+        <img src="static/img/about.png">
+      </div>
+
+      <div class="about-content">
+        <h2 class="heading">About <span>Us</span></h2>
+        <h3>Image Predicter!</h3>
+        <p>Hello. My name is Mohammad Mahdi Khodaei and my friend is Parsia Hassanzadeh.
+           We study in the ninth grade at Allameh Helli 10 School. We have been friends for 
+           several years and have written various projects together. Parsia is responsible for
+            the artificial intelligence part of the projects, and I also do the graphic interface 
+            parts or other parts that are needed for the project. This time we came with a very strong 
+            project that you will get to know about. For more information about us and to see the projects
+             we have done together, click the button below.
+        </p>
+        <a href="https://github.com/parsiya-maha" class="btn">Read More</a>
+      </div>
+    </section>
+
+    <!-- services section design -->
+
+    <section class="services" id="services">
+      <h2 class="heading">Our <span>Services</span></h2>
+
+      <div class="services-container">
+        <div class="services-box">
+          <i class='bx bx-brain' id="brain"></i>
+          <h3>Brain Tumors</h3>
+          <p class="mb">A brain tumor is a growth of cells in the brain or near it.
+             Brain tumors can happen in the brain tissue. Brain tumors also can 
+             happen near the brain tissue. Nearby locations include nerves, the 
+             pituitary gland, the pineal gland, and the membranes that cover the surface of the brain.
+          </p>
+          <a href="https://www.mayoclinic.org/diseases-conditions/brain-tumor/symptoms-causes/syc-20350084#:~:text=A%20brain%20tumor%20is%20a,the%20surface%20of%20the%20brain." class="btn">Read More</a>
+        </div>
+
+        <div class="services-box">
+          <!-- <i class='bx bxs-capsule' ></i> -->
+          <img src="static/img/kidney-svgrepo-com.svg" alt="">
+           <h3>KidneyStone</h3>
+          <p>Kidney stones (also called renal calculi, nephrolithiasis or urolithiasis) are
+             hard deposits made of minerals and salts that form inside your kidneys. Diet, excess 
+             body weight, some medical conditions,
+             and certain supplements and medications are among the many causes of kidney stones.
+          </p>
+          <a href="https://www.mayoclinic.org/diseases-conditions/kidney-stones/symptoms-causes/syc-20355755#:~:text=Kidney%20stones%20(also%20called%20renal,many%20causes%20of%20kidney%20stones." class="btn">Read More</a>
+        </div>
+
+        <div class="services-box">
+          <!-- <i class='bx bx-plus-medical'></i> -->
+          <!-- <i class='bx bx-plus-medical'></i> -->
+          <img src="static/img/lungs-lung-svgrepo-com.svg" alt="">
+          <h3>LungCancer</h3>
+          <p>The most common types of lung cancer are non-small cell carcinoma (NSCLC)
+             and small cell carcinoma (SCLC). NSCLC is more common and grows slowly, while
+              SCLC is less common but often grows quickly. Lung cancer is
+             a significant public health concern, causing a considerable number of deaths globally.
+          </p>
+          <a href="https://www.who.int/news-room/fact-sheets/detail/lung-cancer#:~:text=The%20most%20common%20types%20of,considerable%20number%20of%20deaths%20globally." class="btn">Read More</a>
+        </div>
+
+      <div class="services-box">
+        <!-- <i class='bx bx-plus-medical'></i> -->
+        <!-- <i class='bx bx-plus-medical'></i> -->
+        <img src="static/img/air-anatomy-lungs-svgrepo-com.svg" alt="">
+        <h3>LungMask</h3>
+        <p>The most common types of lung cancer are non-small cell carcinoma (NSCLC)
+           and small cell carcinoma (SCLC). NSCLC is more common and grows slowly, while
+            SCLC is less common but often grows quickly. Lung cancer is
+           a significant public health concern, causing a considerable number of deaths globally.
+        </p>
+        <a href="https://www.who.int/news-room/fact-sheets/detail/lung-cancer#:~:text=The%20most%20common%20types%20of,considerable%20number%20of%20deaths%20globally." class="btn">Read More</a>
+      </div>
+
+    <div class="services-box">
+      <!-- <i class='bx bx-plus-medical'></i> -->
+      <!-- <i class='bx bx-plus-medical'></i> -->
+      <img src="static/img/breast cancer.png" alt="">
+      <h3>BreastCancer</h3>
+      <p>Breast cancer is a disease in which abnormal breast cells grow out of control and form tumours. If left unchecked, the tumours can spread throughout the body and become fatal.
+
+        Breast cancer cells begin inside the milk ducts and/or 
+        the milk-producing lobules of the breast. The earliest form is
+         not life-threatening.
+      </p>
+      <a href="https://www.mayoclinic.org/diseases-conditions/breast-cancer/symptoms-causes/syc-20352470er%20of%20deaths%20globally." class="btn">Read More</a>
+    </div>
+
+    <div class="services-box">
+    <!-- <i class='bx bx-plus-medical'></i> -->
+      <!-- <i class='bx bx-plus-medical'></i> -->
+        <!-- <i class='bx bxs-capsule' ></i> -->
+        <img src="static/img/cervical cancer.png" alt="">
+      <h3>CervicalCancer</h3>
+      <p>Cervical cancer is a growth of cells that starts in
+         the cervix. The cervix is the lower part of the uterus that connects to the vagina. 
+        Various strains of the human papillomavirus, also called HPV, play a role in causing
+         most cervical cancers. HPV is a common infection that's passed through sexual contact.
+      </p>
+      <a href="https://www.cancer.gov/types/cervical" class="btn">Read More</a>
+    </div>
+
+
+    </section>
+
+    <!-- portfolio section design -->
+
+    <section class="portfolio" id="portfolio">
+      <h2 class="heading"><span>Articles</span></h2>
+
+      <div class="portfolio-container">
+        <div class="portfolio-box">
+          <img src="static\img\brain tumor.png" alt="">
+          <div class="portfolio-layer">
+            <h4>Brain Tumor</h4>
+            <p>This model shows what type of brain tumor it is</p>
+              <a href="templates/articlebrain.html"><i class='bx bx-search'></i></a>
+            </div>
+        </div>
+
+        <!--**************************************************************-->
+
+        <div class="portfolio-box">
+          <img src="static/img/lung cancer.png" alt="">
+          <div class="portfolio-layer">
+            <h4>Lung Cancer</h4>
+            <p>This model shows what type of lung cancer it is</p>
+              <a href="templates/articlelung.html"><i class='bx bx-search'></i></a>
+          </div>
+        </div>
+
+        <!--*************************************************************-->
+
+        <div class="portfolio-box">
+          <img src="static/img/kidney stone.png" alt="">
+          <div class="portfolio-layer">
+            <h4>Kidney Stone</h4>
+            <p>This model shows what type of kidney stone it is</p>
+            <a href="templates/articleKidney.html"><i class='bx bx-search'></i></a>
+          </div>
+        </div>
+
+        <div class="portfolio-box">          
+          <img src="static/img/lung cancer.png" alt="">
+          <div class="portfolio-layer">
+            <h4>Lung Mask</h4>
+            <p>This model shows what type of lung mask it is</p>
+            <a href="templates/articleKidney.html"><i class='bx bx-search'></i></a>
+          </div>
+        </div>
+
+        <div class="portfolio-box">
+          <img src="static/img/cerical caner.png" alt="">
+          <div class="portfolio-layer">
+            <h4>Cervical Cancer</h4>
+            <p>This model shows what type of cervical cancer it is</p>
+            <a href="templates/articleKidney.html"><i class='bx bx-search'></i></a>
+          </div>
+        </div>
+
+        <div class="portfolio-box">
+          <img src="static/img/kidney stone.png" alt="">
+          <div class="portfolio-layer">
+            <h4>Brerast Cancer</h4>
+            <p>This model shows what type of breast cancer it is</p>
+            <a href="templates/articleKidney.html"><i class='bx bx-search'></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact section design -->
+
+    <section class="contact" id="contact">
+      <h2 class="heading">Contact <span>Us!</span></h2>
+
+      <form action="https://formspree.io/f/xqkravle" method="post">
+        <div class="input-box">
+          <input type="text" name="first" placeholder="Full Name" autocomplete="off" required>
+          <input type="text" name="last" placeholder="Last Name" autocomplete="off" required>
+        </div>
+
+        <div class="input-box">
+          <input type="number" name="number" placeholder="Mobile Number" autocomplete="off" required>
+          <input type="email" name="email" placeholder="Email Address" autocomplete="off" required>
+        </div>
+        <textarea name="message" id="" cols="30" rows="10" placeholder="Your Message" autocomplete="off" required></textarea>
+        <input type="submit" value="Send Message" class="btn">
+      </form>
+    </section>
+
+    <!-- footer design -->
+
+    <footer class="footer">
+      <div class="footer-text">
+        <p>Copyright &copy; 2024 by Mr.Doctor | All Rights Reserved.</p>
+      </div>
+
+      <div class="footer-iconTop">
+        <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+      </div>
+    </footer>    
+
+
+    <!-- scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- typed js -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <!-- custom js -->
+    <script>
+              /*==================== toggle icon navbar ====================*/
+let menuIcon = document.querySelector('#menu-icon');
+let navbar = document.querySelector('.navbar');
+
+menuIcon.onclick = () => {
+    menuIcon.classList.toggle('bxs-shield-x');
+    navbar.classList.toggle('active'); 
+};
+
+/*==================== scroll sections active link ====================*/
+let sections = document.querySelectorAll('section');
+let navLinks = document.querySelectorAll('header nav a');
+
+window.onscroll = () => {
+    sections.forEach(sec => {
+        let top =window.scrollY;
+        let offset = sec.offsetTop - 150;
+        let height = sec.offsetHeight;
+        let id = sec.getAttribute('id');
+
+        if(top >= offset && top < offset + height) {
+            navLinks.forEach(links => {
+                links.classList.remove('active');
+                document.querySelector('header nav a[href*=' + id +']').classList.add('active');
+            });
+        };
+    });
+    /*=========================== sticky navbar ========================*/
+    let header = document.querySelector('header');
+
+    header.classList.toggle('sticky', window.scrollY > 100);
+
+    /*==================== remove toggle icon and navbar when click navbar link (scroll)====================*/
+    menuIcon.classList.remove('bxs-shield-x');
+    navbar.classList.remove('active');
+};
+
+/*=========================== scroll reveal ========================*/
+ScrollReveal({ 
+    // reset: true,
+    distance: '80px',
+    duration: 2000,
+    delay: 200 
+});
+
+ScrollReveal().reveal('.home-content, .heading', {origin: 'top'});
+ScrollReveal().reveal('.home-img, .services-container, .portfolio-box, .contact form', {origin: 
+'bottom'});
+ScrollReveal().reveal('.home-content h1, .about-img', {origin: 'left'});
+ScrollReveal().reveal('.home-content p, .about-content', {origin: 'right'});
+
+/*=========================== typed js ========================*/
+const typed = new Typed('.multiple-text' , {
+    strings : ['BrainTumors' , 'BreastCancer' , 'Cervicalcancer' ,  'LungMask' , 'KidneyStone' , 'LungCancer'],
+    typedSpeed: 50,
+    backSpeed: 100,
+    backDelay: 200,
+    loop: true
+});
+    </script>
+  </body>
+</html>

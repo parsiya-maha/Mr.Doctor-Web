@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="main_style.css"> -->
+    <link href="{{ url_for('static', path='/css/main_style.css') }}" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/scrollreveal/dist/scrollreveal.min.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">Mr.Doctor</a>
+    
+        <i class='bx bx-menu' id="menu-icon"></i>
+    
+        <nav class="navbar">
+          <a href="http://127.0.0.1:8000/#home" >Home</a>
+          <a href="http://127.0.0.1:8000/#about">About</a>
+          <a href="http://127.0.0.1:8000/#services">Services</a>
+          <a href="http://127.0.0.1:8000/#portfolio">Articles</a>
+          <a href="http://127.0.0.1:8000/#contact">Contact</a>
+          <a href="templates/test-start.html" class="active">Get Start</a>
+          <!--<a href="indexPersian.html">فارسی</a> -->
+        </nav>
+      </header> 
+      <!-- ================================================ -->
+
+      <div class="container">
+        <div class="wrapper">
+            <div class="image">
+                <img src="" alt="">
+            </div>
+            <div class="content">
+                <div class="icon"><img src="..\static\img\icons8-upload-80.png"></div>
+                <div class="text">No file chosen, yet!</div>
+            </div>
+            <div id="cancel-btn"><i class="fas fa-times"></i></div>
+            <div class="file-name">File name here</div>
+        </div>
+        <input  id="default-btn" type="file" hidden>
+        <button onclick="deafultBtn()" id="custom-btn">Choose a file</button>
+      </div>
+
+      
+
+      <div class="form-input">
+        <label for="option">Option:</label>
+        <select name="option" id="option" required>
+            <option value="" selected disabled hidden>Select an option</option>
+            <option value="BrainTumors">BrainTumors</option>
+            <option value="BreastCancer">BreastCancer</option>
+            <option value="CervicalCancer">CervicalCancer</option>
+            <option value="KidneyStone">KidneyStone</option>
+            <option value="LungCancer">LungCancer</option>
+            <option value="LungMask">LungMask</option>
+            <option value="ToRecognize">ToRecognize</option>
+            <option value="ToRecognizeAndPredict">ToRecognizeAndPredict</option>
+        </select>
+      </div>
+
+      <div class="form-button">
+        <button type="submit" id="first">Predict</button>
+      </div>
+
+
+      <table class="table">
+        <tr class="tr1">
+          <td class="td1">Result</td>
+        </tr>
+        <tr class="tr2">
+          <td class="td3" id="result">nan</td>
+        </tr>
+      </table>
+
+      <h1 id="header"><span>Score</span>:</h1 >
+
+      <div class="skill">
+        <div class="outer">
+          <div class="inner">
+            <div id="number">
+              99.8%
+            </div>
+          </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="180px" height="180px">
+          <defs>
+              <linearGradient id="GradientColor">
+              <stop offset="0%" stop-color="#0ef" />
+              <stop offset="100%" stop-color="#4ef" />
+              </linearGradient>
+          </defs>
+              <circle cx="70" cy="70" r="60" stroke-linecap="round" />
+        </svg>
+      </div>
+
+      <!-- <div class="cont">
+         Your existing content here 
+      </div> -->
+
+
+
+
+
+      <script src="https://cdn.jsdelivr.net/npm/scrollreveal"></script>
+
+      <script>
+          document.addEventListener('DOMContentLoaded', function() {
+          const wrapper = document.querySelector(".wrapper");
+          const fileName = document.querySelector(".file-name");
+          const defaultBtn = document.querySelector("#default-btn");
+          const customBtn = document.querySelector("#custom-btn");
+          const img = document.querySelector("img");
+          const regExp = /[0-9a-zA-Z\^\&\'\@{\}\[\],\$\=\!\-\#\(\)\.\%\+\~\_ ]+$/;
+      
+          customBtn.addEventListener('click', function() {
+              defaultBtn.click();
+          });
+      
+          defaultBtn.addEventListener("change", function(){
+              const file = this.files[0];
+              if(file){
+                  const reader = new FileReader();
+                  reader.onload = function(){
+                      const result = reader.result;
+                      img.src = result;
+                      wrapper.classList.add("active");
+                  }
+                  reader.readAsDataURL(file);
+              }
+              if(this.value){
+                  let valueStore = this.value.match(regExp);
+                  fileName.textContent = valueStore;
+              }
+          });
+      
+          async function submitForm() {
+              const fileInput = document.querySelector('#default-btn');
+              const optionSelect = document.querySelector('#option');
+              const resultCell = document.querySelector('#result');
+      
+              if (fileInput.files.length === 0 || optionSelect.value === "") {
+                  alert("Please select an image and an option.");
+                  return;
+              }
+      
+              const formData = new FormData();
+              formData.append('image', fileInput.files[0]);
+              formData.append('option', optionSelect.value);
+      
+              try {
+                  const response = await fetch('http://127.0.0.1:8000/templates/main.html/upload', {
+                      method: 'POST',
+                      body: formData
+                  });
+      
+                  const result = await response.json();
+      
+                  if (response.ok) {
+                      resultCell.textContent = result.result || "No result returned.";
+                  } else {
+                      resultCell.textContent = result.message || "Error occurred.";
+                  }
+              } catch (error) {
+                  resultCell.textContent = "Error: " + error.message;
+              }
+          }
+      
+          document.querySelector('#first').addEventListener('click', function(event) {
+              event.preventDefault();
+              submitForm();
+          });
+      });
+       
+      </script>
+
+</body>
+</html>

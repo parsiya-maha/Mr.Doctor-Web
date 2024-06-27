@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="{{ url_for('static', path='/css/test-start.css') }}" rel="stylesheet">
+    <link rel="icon" href="../static/img/icon-2-big.png" sizes="25x25" type="image/png">  
+    <!-- <link rel="stylesheet" href="../static/css/test-start.css"> -->
+    <title>Mr.Doctor</title>
+    <style>
+         /*BREAKPOINTS*/
+
+/*=============== 1200 ===============*/
+
+@media (max-width: 1200px) {
+  html{
+      font-size: 55%;
+  }
+}
+
+/*=============== 991 ===============*/
+
+@media (max-width: 991px) {
+  .header{
+      padding: 2rem 3%;
+  }
+
+  section{
+      padding: 10rem 3% 2rem;
+  }
+
+}
+
+
+/*=============== 768 ===============*/
+
+@media (max-width: 800px) {
+  #menu-icon{
+      display: block;
+  }
+
+  .navbar {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      padding: 1rem 3%;
+      background: var(--bg-color);
+      border-top: .1rem solid rgba(0, 0, 0, .2);
+      box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+      display: none;
+  }
+
+  .navbar.active{
+      display: block;
+  }
+
+  .navbar a{
+      display: block;
+      font-size: 2rem;
+      margin: 3rem 0;
+  }
+}
+
+@media (max-width: 768px) {
+  #menu-icon{
+      display: block;
+  }
+
+  .navbar {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      padding: 1rem 3%;
+      background: var(--bg-color);
+      border-top: .1rem solid rgba(0, 0, 0, .2);
+      box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+      display: none;
+  }
+
+  .navbar.active{
+      display: block;
+  }
+
+  .navbar a{
+      display: block;
+      font-size: 2rem;
+      margin: 3rem 0;
+  }
+
+}
+
+
+
+/*=============== 450 ===============*/
+
+
+@media (max-width: 450px){
+  html{
+      font-size: 50%;
+  }
+
+}
+
+    </style>
+  </head>
+  <body>
+
+    <!-- header design -->
+
+     <header class="header">
+      <a href="#" class="logo">Mr.Doctor</a>
+
+      <i class='bx bx-menu' id="menu-icon"></i>
+
+      <nav class="navbar">
+        <a href="http://127.0.0.1:8000/#home" >Home</a>
+        <a href="http://127.0.0.1:8000/#about">About</a>
+        <a href="http://127.0.0.1:8000/#services">Services</a>
+        <a href="http://127.0.0.1:8000/#portfolio">Articles</a>
+        <a href="http://127.0.0.1:8000/#contact">Contact</a>
+        <a href="templates/test-start.html" class="active">Get Start</a>
+        <!--<a href="indexPersian.html">فارسی</a>-->
+      </nav>
+    </header>
+    <div id="box" class="box">
+        <form action="">
+            <h2 id="titr">Sign in</h2>
+            <!-- <div class="inputBox" id="name" style="display: none;">
+              <input type="text" required="required">
+              <span>Name</span>
+              <i></i>
+            </div>
+            <div class="inputBox" id="last" style="display: none;">
+              <input type="text" required="required">
+              <span>Last Name</span>
+              <i></i>
+            </div>
+            <div class="inputBox" id="email" style="display: none;">
+              <input type="email" required="required">
+              <span>Email</span>
+              <i></i>
+            </div> -->
+            <div class="inputBox">
+              <input class="input" type="text" required="required">
+              <span>Username</span>
+              <i></i>
+            </div>
+            <div class="inputBox">
+                <input type="password" required="required">
+                <span>Password</span>
+                <i></i>
+              </div>
+              <!-- <div class="inputBox" id="repet" style="display: none;">
+                <input type="text" required="required">
+                <span>Repet Password</span>
+                <i></i>
+            </div> -->
+            <div class="links">
+                <a href="forget-pass.html">Forget Password</a>
+                <a id="singup" href="">SingUp</a>
+            </div>
+            <input type="submit" id="sub" value="Login">
+        </form>
+    </div>
+    <h1 class="brain"><i class='bx bx-brain' id="brain-login"></i> Brain</h1><h1 class="tumor"> Tumor</h1>
+    <h1 class="lung"><i class='bx bxs-capsule' id="brain-login"></i> Lung</h1><h1 class="cancer"> Cancer</h1>
+    <h1 class="kidney"><i class='bx bx-plus-medical' id="brain-login"></i> Kidney</h1><h1 class="stone"> Stone</h1>
+  <script>
+    // Get the form elements
+    const form = document.querySelector('form');
+    const usernameInput = document.querySelector('.input');
+    const passwordInput = document.querySelector('input[type="password"]');
+      
+    // Listen for form submission
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+    
+      // Get the input values
+      const username = usernameInput.value.trim();
+      const password = passwordInput.value.trim();
+    
+      //check the value
+      if(username == "mahdi" && password == "58648891"){
+        alert("login sucsseesful");
+        window.location.href = "main.html";
+      }
+      else{
+        alert("error!");
+      }
+    });
+    
+    const singUp = document.getElementById("singup");
+    const brain = document.getElementById("brain-login");
+    const title = document.getElementById("titr");
+    const sub = document.getElementById("sub");
+    const box = document.getElementById("box");
+    const repet = document.getElementById("repet");
+    const name = document.getElementById("name");
+    const last = document.getElementById("last");
+    const email = document.getElementById("email");
+
+
+    brain.style.transition = "0.8s";
+
+    
+
+    singUp.addEventListener('click', async (a) => {
+      a.preventDefault();
+
+     // Check the current marginLeft value
+     if (brain.style.marginLeft === "1400px") {
+       brain.style.marginLeft = "-170px";
+       box.style.marginRight = "-49%";
+       sub.textContent = "Login";
+       repet.style.display = "none";
+       name.style.display = "none";
+       last.style.display = "none";
+       email.style.display = "none";
+       box.style.height = "420px";
+       box.style.marginTop = "-100px";
+     } else {
+       brain.style.marginLeft = "1400px";
+       sub.textContent = "Sing Up";
+       repet.style.display = "flex";
+       name.style.display = "flex";
+       last.style.display = "flex";
+       email.style.display = "flex";
+       box.style.height = "666px";
+       box.style.marginTop = "30px";
+     }
+
+
+     // Toggle the title, button text, and button ID
+     title.textContent = title.textContent === "Sing up" ? "Sing In" : "Sing up";
+     singUp.textContent = singUp.textContent === "SingIn" ? "Sing Up" : "SingIn";
+     sub.value = sub.value === "Sing Up" ? "Login" : "Sing Up";
+     singUp.id = singUp.id === "singin" ? "singup" : "singin";
+     
+    });
+
+    // Get the form element
+     /* const form = document.querySelector('form');
+      
+      // Listen for form submission
+      form.addEventListener('submit', async (e) => {
+        // Prevent default form submission behavior
+        e.preventDefault();
+      
+        // Get the form data
+        const formData = new FormData(form);
+        const username = formData.get('username');
+        const password = formData.get('password');
+      
+        // Send a POST request to the FastAPI endpoint
+        const response = await fetch('/templates/test-start.html/login', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({ username, password })
+        });
+      
+        // Get the response data
+        const data = await response.json();
+      
+        // Check if the login was successful
+        if (data.massage_bool) {
+          // Redirect to another page or show a success message
+          alert(data.massage);
+          // You can add a redirection logic here based on your requirement
+        } else {
+          // Show an error message
+          alert(data.massage);
+        }
+      });*/
+        let menuIcon = document.querySelector('#menu-icon');
+        let navbar = document.querySelector('.navbar');
+
+        menuIcon.onclick = () => {
+        menuIcon.classList.toggle('bxs-shield-x');
+        navbar.classList.toggle('active'); 
+        };
+    
+  </script>
+  </body>
+</html>
